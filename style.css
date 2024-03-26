@@ -4,7 +4,9 @@
     padding: 0;
     margin: 0;
 font-family:"Roboto",sans-serif;
-
+body{
+    background: black;
+}
 }
 
 .align-top{
@@ -28,6 +30,7 @@ align-items: center;}
     margin: 5px;
     background: transparent;
     color: rgb(0, 0, 0);
+    color: aliceblue;
 }
 .container-nav a:hover{
 background: rgba(234, 177, 8, 0.308);
@@ -64,6 +67,7 @@ img{
     margin: 0 auto;
 }
 span{
+    color: aliceblue;
     background: rgba(9, 255, 0, 0);
     display: block;
     width: 350px;
@@ -83,6 +87,7 @@ img{
     width: 100%;
 }
 span{
+    
     position: relative;
     left: 50%;
     width: 50%;
