@@ -14,17 +14,16 @@ body{
 }
 .align-top{
 align-items: center;}
+    
 .container-nav{
-    background: rgba(36, 36, 207, 0);
-    width: 100%;
-    height: 3rem;
-    margin-bottom: 20px;
-    margin-top: 20px;
     position: relative;
-    top: 20px;
-}
-.container-nav a{
-    padding: 10px;
+    top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    animation: topToBottom 0.8s ease-out;
+
+    /* padding: 10px;
     border: 2px solid transparent;
     border-radius: 45px;
     font-size: 1.5rem;
@@ -33,34 +32,42 @@ align-items: center;}
     margin: 5px;
     background: transparent;
     color:aliceblue;
+    transition: transform 0.3s,; */
 }
-.container-nav a:hover{
+
+/* .container-nav a:hover{
+    transform: translateY(-10px);
 background: rgba(255, 192, 1, 0.325);
+} */
+.container-nav button{
+padding: 0.5rem 0.5rem;
+    text-transform: uppercase;
+font-size: 1.5rem;
+color: aliceblue;
+background: transparent;
+border-radius: 45px;
+border: 2px solid transparent;
+transition: all 0.3s ease;
 }
-.items{
-    width: 500px;
-    position: relative;
-    left: 230px;
-    top: 10px;
+.container-nav button:hover{
+    cursor: pointer;
+    background: aliceblue;
+    color: black;
+    transform: translateY(+10px);
 }
 li{
     list-style: none;
 }
-.container-nav ul
-{
-    display: flex;
-}
+
+    /*  O FLEX SEMPRE É USADO NO ELEMENTO PAI, PQ O ELEMENTOS FILHOS QUE FICARAM FLEXIVEIS */
+
 a{    
-    text-align: center;
-    display: block;
-    flex: 1;
     list-style: none;
 }
 .align-image{
     text-align: center;
 }
 img{
-    z-index: 0;
     width: 530px;
     position: relative;
     top: 100px;
@@ -71,7 +78,32 @@ img{
     width: 1000px;
     margin: 0 auto;
 }
+@keyframes bottomToLeft{
+from{
+transform: translateY(+300px);
+}
+to{
+    transform: translateY(0);
+}
+}
+@keyframes topToBottom{
+from{
+transform: translateY(-100px);
+}
+to{
+    transform: translateY(0);
+}
+}
+@keyframes leftToRight{
+from{
+transform: translateX(-300px);
+}
+to{
+    transform: translateX(0);
+}
+}
 span{
+    animation: bottomToLeft 1.8s ease-out;
     color: aliceblue;
     background: rgba(9, 255, 0, 0);
     display: block;
@@ -84,11 +116,21 @@ span{
     right: 22%;
 font-weight: 500;
 }
+
+/* dimenção pra tablet */
 @media(max-width:680px){
+    .container-nav button{
+        position: relative;
+        left: 35px;
+    }
+    a{
+        width:100%; 
+     }
 img{
-    position: relative;
     left: 0%;
+    position: relative;
     width: 100%;
+object-fit: cover;
 }
 span{
     position: relative;
@@ -96,13 +138,19 @@ span{
     width: 50%;
 }
 }
+/* dimeção pra celular */
 @media(max-width:426px){
+    a{
+       font-size: 3rem;
+    }
 img{
-    position: relative;
     left: 0%;
+    position: relative;
     width: 100%;
+object-fit: cover;
 }
 span{
+    animation: leftToRight 1s ease-out 0s;
     position: relative;
 left: -40%;
 width: 50%;
