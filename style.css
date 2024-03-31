@@ -94,14 +94,15 @@ img{
     width: 1000px;
     margin: 0 auto;
 }
-@keyframes bottomToLeft{
+/* ANIMAÇÃO DO DA LEGENDA SOBRE A IMAGEM */
+/* @keyframes bottomToLeft{
 from{
 transform: translateY(+300px);
 }
 to{
     transform: translateY(0);
 }
-}
+} */
 @keyframes topToBottom{
 from{
 transform: translateY(-200px);
