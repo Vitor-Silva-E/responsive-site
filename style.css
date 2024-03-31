@@ -157,3 +157,26 @@ bottom: 200px;
 width: 50%;
 }
 }
+@media(max-width:375px){
+    .wrapper-container{
+        width: 50%;
+    }
+    .container-nav button{
+        left: -10px;
+        font-size: 0.8rem;
+    }
+    img{
+        position: relative;
+        left: -0px;
+    top: 150px;
+    width: 180%;
+object-fit: cover;
+}
+span{
+    animation: leftToRight 1.6s ease-out 0s;
+    position: relative;
+bottom: 80px;
+    left: -30%;
+font-size: 4rem;
+}
+}
