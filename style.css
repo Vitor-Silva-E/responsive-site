@@ -17,13 +17,12 @@ align-items: center;}
     
 .container-nav{
     position: relative;
-    top: 40px;
+    top: 50px;
     display: flex;
     justify-content: center;
     gap: 15px;
-    animation: topToBottom 0.8s ease-out;
-
-    /* padding: 10px;
+    /*O JEITO QUE EU FAZIA 
+    padding: 10px;
     border: 2px solid transparent;
     border-radius: 45px;
     font-size: 1.5rem;
@@ -33,6 +32,22 @@ align-items: center;}
     background: transparent;
     color:aliceblue;
     transition: transform 0.3s,; */
+}
+.home{
+    animation: topToBottom 0.8s ease-out;
+
+}
+.product{
+    animation: topToBottom 1s ease-out;
+
+}
+.store{
+    animation: topToBottom 1.4s ease-out;
+
+}
+.about-us{
+    animation: topToBottom 1.8s ease-out;
+
 }
 
 /* .container-nav a:hover{
@@ -88,7 +103,7 @@ to{
 }
 @keyframes topToBottom{
 from{
-transform: translateY(-100px);
+transform: translateY(-200px);
 }
 to{
     transform: translateY(0);
