@@ -8,7 +8,7 @@ font-family:"Roboto",sans-serif;
 }
 html{
     height: 820px;
-    height: 300vh;
+    height: 100rem;
 }
 body{
     background: black;
