@@ -21,7 +21,7 @@ align-items: center;}
     top: 50px;
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
     /*O JEITO QUE EU FAZIA 
     padding: 10px;
     border: 2px solid transparent;
@@ -156,6 +156,7 @@ span{
 /* dimeção pra celular */
 @media(max-width:426px){
     .container-nav button{
+        padding: 1.2rem;
        font-size: 2.5rem;
     }
 img{
@@ -175,16 +176,13 @@ width: 50%;
 @media(max-width:375px)
 {
   
-    .container-nav button{
-        padding: 1.2rem;
-        font-size: 3rem;
-    }
     .wrapper-container{
         width: 50%;
     }
     .container-nav button{
+        padding: 1.2rem;
+        font-size: 1rem;
         left: -10px;
-        font-size: 0.8rem;
     }
     img{
         position: relative;
