@@ -160,7 +160,7 @@ span{
         cursor: pointer;
         background: aliceblue;
         color: black;
-        transform: translateY(+25px);
+        transform: translateY(+30px);
     }
     .container-nav button{
         padding: 1.2rem;
@@ -186,7 +186,7 @@ width: 50%;
         cursor: pointer;
         background: aliceblue;
         color: black;
-        transform: translateY(+25px);
+        transform: translateY(+30px);
     }
     .wrapper-container{
         width: 50%;
