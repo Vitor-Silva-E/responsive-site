@@ -155,6 +155,13 @@ span{
 }
 /* dimeção pra celular */
 @media(max-width:426px){
+
+    .container-nav button:hover{
+        cursor: pointer;
+        background: aliceblue;
+        color: black;
+        transform: translateY(+25px);
+    }
     .container-nav button{
         padding: 1.2rem;
        font-size: 2.5rem;
@@ -175,7 +182,12 @@ width: 50%;
 }
 @media(max-width:375px)
 {
-  
+    .container-nav button:hover{
+        cursor: pointer;
+        background: aliceblue;
+        color: black;
+        transform: translateY(+25px);
+    }
     .wrapper-container{
         width: 50%;
     }
