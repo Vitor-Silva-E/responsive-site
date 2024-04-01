@@ -140,9 +140,7 @@ font-weight: 500;
         position: relative;
         left: 35px;
     }
-    a{
-        width:100%; 
-     }
+    
 img{
     left: 0%;
     position: relative;
@@ -174,7 +172,13 @@ bottom: 200px;
 width: 50%;
 }
 }
-@media(max-width:375px){
+@media(max-width:375px)
+{
+  
+    .container-nav button{
+        padding: 1.2rem;
+        font-size: 3rem;
+    }
     .wrapper-container{
         width: 50%;
     }
