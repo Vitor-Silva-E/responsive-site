@@ -43,11 +43,11 @@ align-items: center;}
 
 }
 .store{
-    animation: topToBottom 1.4s ease-out;
+    animation: topToBottom 1.2s ease-out;
 
 }
 .about-us{
-    animation: topToBottom 1.8s ease-out;
+    animation: topToBottom 1.4s ease-out;
 
 }
 
